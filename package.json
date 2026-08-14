@@ -1,0 +1,33 @@
+{
+  "name": "auto-x",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vercel-hosted X feed engagement bot (likes + short replies) using Playwright and OpenAI gpt-5-nano",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "engage": "tsx scripts/local-engage.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^138.0.2",
+    "next": "^15.4.6",
+    "openai": "^5.12.2",
+    "playwright-core": "^1.54.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.17.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "playwright": "^1.54.2",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  }
+}
