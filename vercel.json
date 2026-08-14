@@ -1,0 +1,18 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "0 15 * * *"
+    }
+  ],
+  "functions": {
+    "app/api/cron/route.ts": {
+      "maxDuration": 300,
+      "memory": 1024
+    },
+    "app/api/engage/route.ts": {
+      "maxDuration": 300,
+      "memory": 1024
+    }
+  }
+}
